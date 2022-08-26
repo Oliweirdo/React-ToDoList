@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+const Item = styled.div`
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 7px;
+  background: ${(props) => (props.done ? "b5838d" : "#fCCEC4")};
+`;
+
 class ToDoItem extends Component {
   static defaultProps = {
     done: false,

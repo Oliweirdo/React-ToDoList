@@ -3,6 +3,18 @@ import ToDoItem from "../../components/ToDoItem";
 import NewTodoForm from "../../components/NewToDoForm";
 import styled from "styled-components";
 
+const Container = styled.div`
+  background: #252323;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 14px;
+  border-radius: 14px;
+  margin-top: 14px;
+`;
+const Header = styled.h1`
+  color: #ebd9d5;
+`;
 class ToDoList extends Component {
   static defaultProps = {
     tasks: [{ text: "plant the plant" }, { done: false, text: "make coffee" }],
